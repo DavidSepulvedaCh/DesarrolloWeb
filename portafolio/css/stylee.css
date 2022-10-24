@@ -1,0 +1,313 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; /*referencia para 1em*/
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*-----------HEADER-------------------*/
+header{
+    background: url(../img/header.jpg) rgba(12, 225, 240, 0.384) ;
+    background-size: cover; /*la imagen sea relativa al tamaño*/
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+    max-height: 600px;
+}
+
+header .menu{
+    margin: 40px 0; 
+    text-align: right;/*para colocar a la derecha*/
+}
+
+header .menu a{
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 9px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-size: 1em;/*1em es la medida del body*/
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid #fff;/*Para la barra debajo del enlace*/
+}
+
+header .contenedor-texto{
+    display: flex; /*para utilizar flexblox*/
+    margin: 190px;
+    justify-content: center;
+    align-content: center; /*centrar horizontal y vertical*/
+}
+
+header .contenedor-texto .texto{
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 3px;
+    display: inline-block; /*para colocar elementos en linea*/
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto, h2{
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+
+header .contenedor-texto .texto .nombre{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .contenedor-texto .texto .profecion{
+    font-size: 25px;
+    line-height: 25px;
+}
+
+
+/*--------------MAIN------------------------*/
+
+.main .contenedor{
+    overflow: visible; /*para hacer exepcion del hidden*/
+}
+
+.main .acerca-de{
+    text-align: center;
+}
+
+.main .acerca-de p{
+    text-align: justify;
+}
+
+.main .acerca-de .foto{
+    margin-top: -60px;
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 10%;
+    border: 5px solid rgba(255,255,255,0.2);
+}
+
+.main .acerca-de .texto{
+    color: #5a5a5a;
+    font-weight: 600;/*definir el tipo de la fuente bold, etc...*/
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+.main .acerca-de .texto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #dd820d;
+    text-align: center;
+}
+
+.main .acerca-de .texto .bold{
+    color: #3895ea;
+    text-decoration: underline;
+}
+
+.main .contenedor-trabajos img{
+    width: 250px;
+}
+
+/*--------------TRABAJOS-------------------*/
+
+.main .trabajos{
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+.main .trabajos .contenedor{
+    overflow: hidden;
+}
+
+.main .trabajos .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #11665f;
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo{
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre{
+    font-weight: 700;
+    color: #3895ea;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
+    font-size: 14px;
+    color: #636363;
+}
+
+/*-------------------------FOOTER-------------------*/
+
+footer .contacto{
+    padding: 60px 0;
+}
+
+footer .contacto h3{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #416611;
+}
+
+footer .contacto .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*distribui el espacio entre elementos*/
+    margin: 0 60px;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="mail"],
+footer .contacto .formulario textarea{
+   border: 2px solid #cecece;
+   border-radius: 5px;
+   padding: 15px 20px;
+   font-size: 20px;
+   color: #a4a4a4;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="mail"]{
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario textarea{
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    max-height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario .boton{
+    margin: auto;
+    background: #416611;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+footer .contacto .formulario .boton:hover{
+    color: #416611;
+    background: #fff;
+    border: 2px solid #416611;
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="mail"]:focus,
+footer .contacto .formulario textarea:focus{
+    border: 2px solid #416611;
+}
+
+footer .redes-sociales{
+    background: #1e2b38;
+    padding: 60px 0;
+}
+
+footer .redes-sociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redes-sociales .twitter:hover{background: #1da1f2;}
+footer .redes-sociales .instagram:hover{background: #fcaf45;}
+footer .redes-sociales .facebook:hover{background: #1877f2;}
+
+footer .redes-sociales .github:hover{
+    color: #1e2b38;
+    background: #f5f5f5;
+}
+
+/*-------------------------MEDIA QUERIES---------------------*/
+
+@media screen and (max-width: 800px) {
+    header .menu{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .contenedor-texto .texto .nombre{
+        font-size: 35px;
+    }
+    
+    header .contenedor-texto .texto .profesion{
+        font-size: 18px;
+    }
+
+    footer .redes-sociales .contenedor{
+        flex-wrap: wrap;
+    }
+}
