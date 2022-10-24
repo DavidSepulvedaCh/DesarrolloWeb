@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Buena Vida</title>
+    <link rel="stylesheet" href="../css/stylee.css">
+    <link rel="stylesheet" href="../css/infoProducto.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/48c1f129e4.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Barra superior -->
+        <header>
+            <div class="logo">
+                <a href="./index.html"><img src="../img/logo.jpg" alt="0" height="50"></a>
+            </div>
+
+            <div class="busqueda">
+                <div class="nav_buscar">
+                    <form action="#" autocomplete="off">
+                        <input type="text" placeholder="¿Que producto estas buscando...?" name="buscar" id="buscar" required>
+                        <button id="btnBuscar" type="button"><i class="fa fa-search" style="font-size: 16px;"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul class="menu">
+                    <li class="opciones"><a href="#" ><i class="fa-regular fa-heart mdl"></i>Mis favoritos</a></li>
+                    <li class="opciones">
+                        <a href="#"><i class="fa-regular fa-circle-user"></i>Mi cuenta</a>
+                        <ul class="cuenta">
+                            <li class="borCuenta"><a href="#"><i class="fa-solid fa-user"></i>Mi cuenta</a></li>
+                            <li class="borCuenta"><a href="#"><i class="fa-regular fa-heart"></i>Mis favoristos</a></li>
+                            <li class="borCuenta"><a href="#"><i class="fa-solid fa-check"></i>Mi carrito</a></li>
+                            <li class="borCuenta"><a href="../html/login.html"><i class="fa-solid fa-lock"></i>Entrar</a></li>
+                            <li><a href="../html/registrar.html"><i class="fa-solid fa-user-plus"></i> Crear una cuenta</a></li>
+                        </ul>
+                    </li>
+                    <li class="opciones">
+                        <a href="#"><i class="fa-solid fa-basket-shopping"></i>Mi carrito</a>
+                        <ul class="carro" id="carro">
+                            <div class="items" id="items">
+                                <div class="itemP" id="itemP">
+                                    <div class="thumb">
+                                        <img src="../img/1.jpg" alt="" height="100">
+                                    </div>
+                                    <div class="informacion">
+                                        <h4 class="titulo">Titulo producto</h4>
+                                        <p class="medida">Media</p>
+                                        <label for="cantidadProducto">Cantidad</label>
+                                        <input type="number" class="cantidadProducto" value="0" name="cantidadProducto" id="cantidadProducto"  min="0" max="100">
+                                    </div>
+                                    <p class="precio" id="precio">15,5$</p>
+                                    <i id="quitarProducto" onclick="eliminar()" class="fa-solid fa-trash quitarProducto"></i>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="subtotal">
+                                <p id="texto">Subtotal</p>
+                                <p id="precioSubtotal">30.00$</p>
+                            </div>
+                            <div class="total">
+                                <p><b>TOTAL </b><span><b>(IVA incluido)</b></span></p>
+                                <p id="precio" ><b>38.00$</b></p>
+                            </div>
+                            <p id="avisoEnvio">Te faltan 6$ para el envio gratuito.</p>
+                            <li><a href="../html/carrito.html" class="btnCarro">Ir al carrito</a></li>
+                            <li><a href="#" class="btnCarro">Realizar pedido</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <!-- Precio -->
+        <aside>
+            <div class="slider-precio">
+                <h2>Precios</h2>
+                <div class="filtroPrecio">
+                    <div class="precioEntrada">
+                      <div class="cajas">
+                        <span>Desde</span>
+                        <input type="number" class="input-min" value="2500">
+                      </div>
+                      <div class="separador">-</div>
+                      <div class="cajas">
+                        <span>Hasta</span>
+                        <input type="number" class="input-max" value="7500">
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="progreso"></div>
+                    </div>
+                    <div class="rango-input">
+                      <input type="range" id="rangeMin" class="range-min" min="0" max="100" value="25" step="1">
+                      <input type="range" id="rangeMax" class="range-max" min="0" max="100" value="75" step="1">
+                    </div>
+                    <input type="submit" id="filtrar" value="Filtrar">
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido pagina -->
+        <div class="main">
+            <!-- <div class="banner">
+                <div class="contenedor-texto">
+                    <div class="texto">
+                        <h1 class="nombre">BUENA VIDA</h1>
+                        <h2 class="tienda">SHOP</h2>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Vitrina productos -->
+            <div class="vitrina">
+                <h2 class="titulo2">NUESTROS PRODUCTOS</h2>
+                <div class="tarjetas" id="tarjetas">
+                    <div class="tarjeta">
+                        <div class="thumb">
+                            <i class="fa-regular fa-heart"></i>
+                            <img src="../img/1.jpg" alt="producto1" height="250">
+                        </div>
+                        <div class="informacion">
+                            <h3 class="tituloProductos">Titulo Producto #1</h3>
+                            <h5 class="medidas">Medida #1</h5>
+                            <p class="descripcion">Descripcion corta producto #1</p>
+                            <h3 class="precio">15,20 $</h3>
+                            <a  class="añadirCarro"><i class="fa-solid fa-basket-shopping"></i> Añadir a la cesta</a>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="barraNav">
+                <section class="navegacion">
+                    <ul>
+                        <li><a href="#" id="btnAtras"><</a></li>
+                        <li><a href="#" id="btn1">1</a></li>
+                        <li><a href="#" id="btn2">2</a></li>
+                        <li><a href="#" id="btn3">3</a></li>
+                        <li><a href="#" id="btn4">4</a></li>
+                        <li><a href="#" id="btn5">5</a></li>
+                        <li><a href="#" id="btnAdelante">></a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <section class="modal">
+        <div class="contenedor_modal">
+            <div class="contenido_modal">
+                <a href="./index.html" class="cerrar">x</a>
+                <div class="izquierda_modal">
+                    <div class="imagenProducto_modal">
+                        <img src="../img/11.jpg" alt="" height="380">
+                    </div>
+                </div>
+                <div class="derecha_modal">
+                    <header>
+                        <h2>Titutlo del producto</h2>
+                        <i class="fa-regular fa-heart"></i>
+                    </header>
+                    <div class="informacion_modal">
+                        <h4 class="medida_modal">60USD.</h4>
+                        <h2 class="precio_modal">15.50 $</h2>
+                        <p class="sale_modal">Sale a: 0.26$/ud.</p>
+                    </div>
+                    <div class="descripcion_modal">
+                        <p class="drecripcionProducto_modal">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt excepturi recusandae voluptas rerum quam dolores quibusdam minima, fugiat quia harum molestiae temporibus? Possimus, nesciunt. Ullam eaque nulla voluptate possimus iste?
+                        </p>
+                    </div>
+                    <div class="pie_modal">
+                        <input type="number" name="cantidad" id="cantidad" value="0" min="0" max="100">
+                        <a  href="" id="anadirCarro_modal" onclick="activar()" class="anadirCarro"><i class="fa-solid fa-basket-shopping"></i> Añadir a la cesta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/productos.js"></script>
+</body>
+
+</html>
