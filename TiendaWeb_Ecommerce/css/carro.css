@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "WorkSans-Regular", Arial, Helvetica, sans-serif;
+  background: #fff;
+  /*  background-blend-mode: darken; para agregar el color a la imagen de fondo
+  background-size: cover;
+  background-attachment: fixed; */ }
+
+.contenedor {
+  margin: 15px auto;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: space-between; }
+  .contenedor .contenido {
+    width: 100%;
+    display: flex;
+    margin-top: 20px; }
+    .contenedor .contenido .titulo {
+      text-align: center; }
+    .contenedor .contenido .productos {
+      width: 70%;
+      height: 450px; }
+      .contenedor .contenido .productos img {
+        margin: 2px 8px -1px 0; }
+      .contenedor .contenido .productos .producto {
+        width: 100%;
+        /* background: #f2f2f2; */
+        margin-top: 20px;
+        display: flex; }
+        .contenedor .contenido .productos .producto .informacion {
+          margin-top: 15px; }
+          .contenedor .contenido .productos .producto .informacion .tituloProductos {
+            margin: 10px 0;
+            width: 170px;
+            font-size: 19px; }
+          .contenedor .contenido .productos .producto .informacion .marca, .contenedor .contenido .productos .producto .informacion .talla {
+            margin: 3px 0;
+            color: #636363; }
+        .contenedor .contenido .productos .producto .cantidad {
+          width: 200px;
+          margin: 50px 50px;
+          align-items: center;
+          color: #636363; }
+          .contenedor .contenido .productos .producto .cantidad label {
+            margin-right: 8px; }
+          .contenedor .contenido .productos .producto .cantidad .cantidadProductos {
+            width: 75px;
+            padding: 10px 0;
+            border: 1px solid #636363;
+            text-align: center;
+            margin: auto;
+            align-items: center; }
+        .contenedor .contenido .productos .producto .precio {
+          display: flex;
+          margin-top: 70px;
+          margin-left: -40px;
+          margin-bottom: 30px; }
+          .contenedor .contenido .productos .producto .precio i {
+            margin-left: 60px;
+            color: #636363;
+            cursor: pointer; }
+            .contenedor .contenido .productos .producto .precio i:hover {
+              color: #969696; }
+    .contenedor .contenido .resumen {
+      width: 30%;
+      padding: 15px 20px;
+      background: #f2f2f2a2; }
+      .contenedor .contenido .resumen #tituloR {
+        font-size: 20px;
+        color: #636363;
+        margin-bottom: 13px; }
+      .contenedor .contenido .resumen .subtotal {
+        font-size: 14px;
+        margin-bottom: 13px;
+        display: flex;
+        justify-content: space-between; }
+      .contenedor .contenido .resumen .total {
+        display: flex;
+        font-size: 15px;
+        justify-content: space-between; }
+      .contenedor .contenido .resumen #envio {
+        font-size: 12px;
+        color: #636363;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-bottom: 100px; }
+      .contenedor .contenido .resumen .btn {
+        width: 90%;
+        margin-left: 13.5px;
+        padding: 8px;
+        border-radius: 20px;
+        border: none;
+        background: #76c52c;
+        color: #fff;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .contenedor .contenido .resumen .btn:hover {
+          background: #efa229; }
+      .contenedor .contenido .resumen .aviso {
+        color: #76c52c;
+        font-size: 14px;
+        margin-left: 10px; }
+        .contenedor .contenido .resumen .aviso:hover {
+          color: #efa229; }
+
+/*# sourceMappingURL=carro.css.map */

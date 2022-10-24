@@ -1,0 +1,83 @@
+.modal {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s; }
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s; }
+
+.contenedor_modal {
+  width: 100%;
+  max-width: 1000px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 20px; }
+  .contenedor_modal .contenido_modal {
+    margin: 20px auto;
+    display: flex;
+    border-radius: 10px; }
+    .contenedor_modal .contenido_modal .cerrar {
+      font-size: 18px;
+      text-decoration: none;
+      left: 980px;
+      position: relative;
+      margin-bottom: 20px; }
+    .contenedor_modal .contenido_modal .izquierda_modal {
+      width: 30%; }
+      .contenedor_modal .contenido_modal .izquierda_modal img {
+        width: 100%;
+        border-radius: 20px; }
+    .contenedor_modal .contenido_modal .derecha_modal {
+      margin-top: 20px;
+      width: 70%;
+      margin-left: 20px; }
+      .contenedor_modal .contenido_modal .derecha_modal header {
+        color: #202020;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 25px; }
+        .contenedor_modal .contenido_modal .derecha_modal header i {
+          margin-right: 20px; }
+      .contenedor_modal .contenido_modal .derecha_modal .informacion_modal {
+        width: 100%; }
+        .contenedor_modal .contenido_modal .derecha_modal .informacion_modal .medida_modal {
+          color: #8f8f8f;
+          margin-bottom: 10px; }
+        .contenedor_modal .contenido_modal .derecha_modal .informacion_modal .precio_modal {
+          color: #5ccb5f; }
+        .contenedor_modal .contenido_modal .derecha_modal .informacion_modal .sale_modal {
+          color: #8f8f8f;
+          font-size: 16px;
+          margin-bottom: 20px; }
+      .contenedor_modal .contenido_modal .derecha_modal .descripcion_modal {
+        margin-right: 20px; }
+        .contenedor_modal .contenido_modal .derecha_modal .descripcion_modal .descripcionProducto_modal {
+          text-align: justify; }
+      .contenedor_modal .contenido_modal .derecha_modal .pie_modal {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px; }
+        .contenedor_modal .contenido_modal .derecha_modal .pie_modal a {
+          margin-right: 20px;
+          padding: 8px;
+          background: #efa229;
+          text-decoration: none;
+          color: #f2f2f2;
+          border-radius: 20px; }
+          .contenedor_modal .contenido_modal .derecha_modal .pie_modal a:hover {
+            background: #5ccb5f; }
+        .contenedor_modal .contenido_modal .derecha_modal .pie_modal input {
+          text-align: center;
+          color: #5ccb5f;
+          cursor: pointer; }
+
+/*# sourceMappingURL=infoProducto.css.map */

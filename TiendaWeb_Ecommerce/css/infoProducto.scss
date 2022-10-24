@@ -1,0 +1,102 @@
+.modal{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+
+.contenedor_modal{
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto;
+    background:#fff;
+    border-radius: 20px;
+    .contenido_modal{
+        margin: 20px auto;
+        display: flex;
+        border-radius: 10px;
+        .cerrar{
+            font-size: 18px;
+            text-decoration: none;
+            left: 980px;
+            position: relative;
+            margin-bottom: 20px;
+            
+        }
+        .izquierda_modal{
+            width: 30%;
+            img{
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+        .derecha_modal{
+            margin-top: 20px;
+            width: 70%;
+            margin-left: 20px;
+            header{
+                color: #202020;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                margin-bottom: 25px;
+                i{
+                    margin-right: 20px;
+                }
+            }
+            .informacion_modal{
+                width: 100%;
+                .medida_modal{
+                    color: #8f8f8f;
+                    margin-bottom: 10px;
+                }
+                .precio_modal{
+                    color: #5ccb5f;
+                }
+                .sale_modal{
+                    color: #8f8f8f;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .descripcion_modal{
+                margin-right: 20px;
+                .descripcionProducto_modal{
+                    text-align: justify;
+                }
+            }
+            .pie_modal{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                a{
+                    margin-right: 20px;
+                    padding: 8px;
+                    background: #efa229;
+                    text-decoration: none;
+                    color: #f2f2f2;
+                    border-radius: 20px;
+                    &:hover{
+                        background: #5ccb5f;
+                    }
+                }
+                input{
+                    text-align: center;
+                    color: #5ccb5f;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

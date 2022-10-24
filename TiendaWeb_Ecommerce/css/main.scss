@@ -1,0 +1,171 @@
+.main{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    
+    .vitrina{
+        
+        h2{
+            margin-top: 20px;
+            text-align: center;
+            /* border-bottom: 1px solid #5ccb5f; */
+            text-shadow: 0 0 2px #5ccb608a;
+        }
+        .tarjetas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .tarjeta{
+                /* border: 1px solid rgba(0, 0, 0, 0.521); */
+                margin-top: 20px;   
+                padding-bottom: 25px;
+                cursor: pointer;
+                border-radius: 15px;
+                
+                a{
+                    opacity: 0;
+                    visibility: hidden;
+                    background: #efa229;
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 8px;
+                    border-radius: 20px;
+                    
+                    
+                    &:hover{
+                        background: #f3b24a;
+                    }
+                }
+                .anadirCarro{
+                    margin-left: 28px;
+                }
+                .dto{
+                    background: #C0392B;
+                    margin-left: 15px;
+                    margin-top: 15px;
+                    position: relative;
+                    width: 65px;
+                    color: #fff;
+                    padding: 10px;
+                    display: block;
+                    border-radius: 80px;
+                    bottom: -30px;
+                    margin-top: 2px;
+                }
+                .thumb{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    i{
+                        opacity: 0;
+                        visibility: hidden;
+                        position: relative;
+                        top: 40px;
+                        right: 25px;
+                        color: #636363;
+                        float: right;
+                        font-size: 20px;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        vertical-align: top;
+                        border-radius: 5px;
+                                                
+                    }
+                    
+                    
+                }
+                .tituloProductos{
+                    font-weight: 700;
+                    font-size: 17px;
+                    color: #000;
+                    text-align: center;
+                }
+                .medidas{
+                    text-align: center;
+                    font-size: 14px;
+                    color: #636363;
+                }
+                .descripcion{
+                    text-align: center;
+                    font-size: 14px;
+                    color: #636363;
+                }
+                .precio{
+                    color: #5ccb5f;
+                    text-align: center;
+                    margin-top: 8px;
+                    margin-bottom: 15px;
+                }
+                &:hover .anadirCarro{
+                    visibility: visible;
+                    opacity: 1;
+                    
+                }
+                &:hover .thumb{
+                    i{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                &:hover{
+                    position: relative;
+                    top: -10px; 
+                    left: 5px;
+                    -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.192);
+                    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.192);
+                    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.192);
+                }
+                
+            }
+        }
+        
+    }
+    .barraNav{
+        margin-top: 50px;
+        float: right;
+        .navegacion{
+            margin:20px 0;
+            ul{
+                list-style:none;
+                text-align: center;
+            }
+            ul li {
+                display:inline-block;
+                margin-right:10px;
+            }
+            ul li a{
+                display:block;
+                padding:10px 20px;
+                color:#636363;
+                text-decoration: none;
+                border: .2px solid #98ec9b;
+                border-radius: 2px;
+                &:hover{
+                    background:#98ec9b;
+                    color: #fff;
+                }
+            }
+            ul li .active{
+                background:#98ec9b;
+                border: 1px solid #98ec9b;
+	            font-weight:bold;
+                color: #fff;
+                border: none;
+                &:hover{
+                    color: #636363;
+                    background: none;
+                    border: 1px solid #98ec9b;
+                }
+            }
+
+        }
+    }
+    
+    
+}
